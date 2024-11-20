@@ -9,8 +9,10 @@
 }
 
 .navbar-wrapper.scrolled {
-  background-color: #000312;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  background-color: #0e0e0ed6;
+backdrop-filter: blur(20px); /* Ajuste o valor de 10px para mais ou menos conforme o efeito desejado */
+
+  box-shadow: 0 6px 5px rgba(0, 0, 0, 0.395);
 }
 
 .navbar {

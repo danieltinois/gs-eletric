@@ -41,6 +41,8 @@ export const Home = () => {
           </div>
 
           <div className="info-2">
+            <div className="teste-info-2">
+              </div>
             <h1>Gs-Electric Inovações</h1>
             <p>
               Simplifique seus trajetos com bicicletas e ônibus elétricos, ganhe
@@ -77,6 +79,8 @@ export const Home = () => {
             <span className="arrow-btn-more-info">→</span>
           </button>
         </div>
+
+        <div></div>
 
         <div className="about-us-details">
           <div className="titles-us-details">
