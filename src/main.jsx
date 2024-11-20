@@ -9,7 +9,7 @@ import "./styles/Global.css";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <Home />
+    {/* <Home /> */}
     <RewardsPage />
 
   </StrictMode>

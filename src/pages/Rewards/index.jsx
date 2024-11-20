@@ -1,5 +1,9 @@
 import React from 'react';
 import './style.css'; // Estilos para a página
+import { NavBar } from '../../components/navbar';
+import { ContactUs } from '../../components/btnContactUs';
+import { MajorBelt } from '../../components/tracks/majorBelt';
+import { MinorBand } from '../../components/tracks/minorBand';
 
 
 const RewardsPage = () => {
@@ -20,7 +24,22 @@ const RewardsPage = () => {
 
   return (
     <>
-    
+
+    {/* Nav bar e components */}
+    <div className="container">
+      <NavBar />
+      <div className="teste-button-contact-us">
+        <ContactUs />
+      </div>
+
+      <div className="container-tracks">
+        <MajorBelt />
+        <div className="minor-band">
+          <MinorBand />
+        </div>
+      </div>
+      </div>
+
       {/* Perfil do Usuário */}
       <div className="user-profile-container">
         <div className="profile-header">
@@ -66,6 +85,7 @@ const RewardsPage = () => {
   <button onClick={handleRedeemPoints}>
     Resgatar Pontos
   </button>
+ 
     </>
   );
 };

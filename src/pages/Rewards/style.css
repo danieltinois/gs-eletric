@@ -1,63 +1,77 @@
+/* Configuração geral do body */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(105deg, #131a2d 60%, #37506f 100%);
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;  /* Usa flexbox para centralizar os filhos */
+  justify-content: center;  /* Centraliza os itens na horizontal */
+  align-items: center;  /* Centraliza os itens na vertical */
+  flex-direction: column;  /* Organiza os itens verticalmente */
+  min-height: 100vh;  /* Garante que o body ocupe toda a altura da tela */
+}
 
-  
-  /* User profile components */
-  .user-profile-container,
-  .achievements,
-  .rewards {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 30px; /* Espaçamento maior entre os cards */
-    padding: 20px;
-    width: 90%;
-    max-width: 600px;
-  }
-  
-  .profile-header h2 {
-    margin-bottom: 15px;
-    color: #333;
-  }
-  
-  .profile-info {
-    display: flex;
-    align-items: center;
-  }
-  
-  .profile-pic img {
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    margin-right: 20px;
-  }
-  
-  .badges {
-    display: flex;
-    flex-wrap: wrap; /* Permite que os badges quebrem linha */
-    gap: 15px; /* Espaçamento maior entre os badges */
-  }
-  
-  .badge {
-    background-color: #ddd;
-    padding: 10px 15px;
-    border-radius: 20px;
-    color: white;
-    text-align: center;
-  }
-  
-  .badge.unlocked {
-    background-color: #4caf50;
-  }
-  
+/* Container para os cards */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os cards horizontalmente */
+  justify-content: center;
+  width: 100%;
+}
+
+/* User profile components */
+.user-profile-container,
+.achievements,
+.rewards {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 30px; /* Espaçamento maior entre os cards */
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  text-align: center;
+}
+
+/* Outros estilos já definidos para o perfil e conquistas */
+.profile-header h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os badges quebrem linha */
+  gap: 15px; /* Espaçamento maior entre os badges */
+}
+
+.badge {
+  background-color: #ddd;
+  padding: 10px 15px;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+}
+
+.badge.unlocked {
+  background-color: #4caf50;
+}
+
 /* Estilo do card de progresso */
 .points-progress {
   background-color: white;
@@ -95,8 +109,7 @@ body {
   margin-top: 10px;
 }
 
-  
-  /* Estilo do botão */
+/* Estilo do botão */
 button {
   background-color: #4caf50;
   color: white;
@@ -112,4 +125,3 @@ button {
 button:hover {
   background-color: #45a049;
 }
-  
