@@ -18,8 +18,9 @@ export const Home = () => {
   return (
     <div className="container">
       <NavBar />
-
-      <ContactUs />
+      <div className="teste-button-contact-us">
+        <ContactUs />
+      </div>
 
       <div className="container-tracks">
         <MajorBelt />

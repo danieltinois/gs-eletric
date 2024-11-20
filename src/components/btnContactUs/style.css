@@ -1,60 +1,136 @@
-.cta {
-  position: relative;
-  margin: auto;
-  padding: 11.5px 18px;
-  transition: all 0.2s ease;
-  border: 3px solid #552da8;
-  border-radius: 50px;
-  background: #552da8;
-  cursor: pointer;
+/* From Uiverse.io by mrhyddenn */
+.shadow__btn {
+  padding: 10px 20px;
+  border: none;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+
+  transition: 0.5s;
+  transition-property: box-shadow;
 }
 
-.cta:before {
-  content: "";
-  position: absolute;
+.shadow__btn {
+  background: rgb(0, 140, 255);
+  box-shadow: 0 0 25px rgb(0, 140, 255);
+}
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px rgb(0, 140, 255), 0 0 25px rgb(0, 140, 255),
+    0 0 50px rgb(0, 140, 255), 0 0 100px rgb(0, 140, 255);
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
   top: 0;
-  right: 0;
-  display: block;
-  border-radius: 50px;
-  background: white;
-  width: 45px;
-  height: 45px;
-  transition: all 0.8s ease;
-}
-
-.cta span {
-  position: relative;
-  font-family: Montserrat;
-  font-size: 18px;
-  color: white;
-  font-weight: 400;
-  letter-spacing: 0.05em;
-}
-
-.cta svg {
-  position: relative;
-  top: 0;
-  margin-left: 10px;
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke: white;
-  stroke-width: 2;
-  transform: translateX(-5px);
-  transition: all 0.5s ease;
-}
-
-.cta:hover:before {
+  left: 0;
   width: 100%;
-  background: #1c1c1c;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
 }
 
-.cta:hover svg {
-  transform: translateX(0);
-  transition: all 2s ease;
+/* Modal Container */
+.modal-container {
+  background-color: #0e0e0e;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: modal-in 0.3s ease-out;
 }
 
-.cta:active {
-  transform: scale(0.95);
-  transition: all 2s ease;
+/* Modal Content */
+.modal-content h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffff;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Input Group */
+.input-group {
+  margin-bottom: 16px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 16px;
+  color: #ffff;
+  margin-bottom: 8px;
+}
+
+.input-group input,
+.input-group textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: #edf2f7;
+  border: 1px solid #cbd5e0;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+  outline: none;
+  border-color: #f6ad55;
+}
+
+/* Submit Button */
+.submit-btn {
+  background-color: #f6ad55;
+  color: #ffff;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #ed8936;
+}
+
+/* Close Button */
+.close-btn {
+  background-color: transparent;
+  border: none;
+  color: #ffff;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 16px;
+  text-align: center;
+  display: block;
+  width: 100%;
+  padding: 8px;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+  color: #e53e3e;
+}
+
+/* Modal Animation */
+@keyframes modal-in {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+textarea {
+  resize: none;
 }

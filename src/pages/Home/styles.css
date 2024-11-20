@@ -7,6 +7,14 @@ body {
   background: linear-gradient(105deg, #131a2d 60%, #37506f 100%);
 }
 
+.teste-button-contact-us {
+  position: fixed;
+  top: 90%;
+  left: 30px;
+
+  z-index: 100;
+}
+
 .container {
   height: 100%;
   width: 100%;
@@ -366,8 +374,7 @@ body {
 .information-block-3:hover .text-information--block {
   scale: 1.1;
   z-index: 2;
-} 
-
+}
 
 .text-information--block:hover + .img-information-block {
   filter: blur(2px);
