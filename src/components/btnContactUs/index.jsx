@@ -9,14 +9,14 @@ export const ContactUs = () => {
   return (
     <div>
       <button className="shadow__btn" onClick={toggleModal}>
-        Fale Conosco
+        Fale Conosco!
       </button>
 
       {isModalOpen && (
         <div className="modal-overlay">
           <div className="modal-container">
             <div className="modal-content">
-              <h2>Contact Us</h2>
+              <h2>Fale Conosco!</h2>
               <form>
                 <div className="input-group">
                   <label htmlFor="name">Escreva Seu Nome</label>
