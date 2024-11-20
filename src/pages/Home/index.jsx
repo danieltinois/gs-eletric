@@ -13,6 +13,7 @@ import { CiCloudOn } from "react-icons/ci";
 import { IoShieldCheckmarkOutline } from "react-icons/io5";
 import { Footer } from "../../components/footer";
 import { ContactUs } from "../../components/btnContactUs";
+import { ButtonRM } from "../../components/btnRm";
 
 export const Home = () => {
   return (
@@ -43,6 +44,10 @@ export const Home = () => {
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
+
+            <div className="button-rm">
+              <ButtonRM />
+            </div>
           </div>
 
           <div className="info-2">
