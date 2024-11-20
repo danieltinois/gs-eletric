@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  
+  /* User profile components */
+  .user-profile-container,
+  .achievements,
+  .rewards {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 30px; /* Espaçamento maior entre os cards */
+    padding: 20px;
+    width: 90%;
+    max-width: 600px;
+  }
+  
+  .profile-header h2 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-pic img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+  
+  .badges {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os badges quebrem linha */
+    gap: 15px; /* Espaçamento maior entre os badges */
+  }
+  
+  .badge {
+    background-color: #ddd;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+  }
+  
+  .badge.unlocked {
+    background-color: #4caf50;
+  }
+  
+/* Estilo do card de progresso */
+.points-progress {
+  background-color: white;
+  width: 100%;
+  max-width: 400px;  /* Limita a largura do card */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 20px auto;  /* Centraliza o card */
+}
+
+/* Estilo da barra de progresso */
+.progress-bar {
+  width: 100%;
+  height: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+/* Estilo da barra de progresso preenchida */
+.progress {
+  height: 100%;
+  background-color: #4caf50;  /* Cor verde para indicar progresso */
+  border-radius: 10px;
+  transition: width 0.5s ease;  /* Transição suave para o preenchimento */
+}
+
+/* Estilo do texto de progresso */
+.points-progress p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+}
+
+  
+  /* Estilo do botão */
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 15px;  /* Espaço entre o botão e o conteúdo acima */
+  width: 100%;  /* Botão ocupa toda a largura do card */
+}
+
+button:hover {
+  background-color: #45a049;
+}
+  
