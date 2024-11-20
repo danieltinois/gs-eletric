@@ -20,7 +20,6 @@ backdrop-filter: blur(20px); /* Ajuste o valor de 10px para mais ou menos confor
   justify-content: space-between;
   align-items: center;
   padding: 20px 110px;
-  /* margin-bottom: 40px; */
 }
 
 .logo {

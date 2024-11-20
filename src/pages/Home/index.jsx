@@ -127,7 +127,7 @@ export const Home = () => {
               <img
                 src="https://s3-alpha-sig.figma.com/img/8a8d/cea5/5934479c025249d2596a96cae8b61e81?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Cz78RTGTRVWKCur4b3KO12LIAEOPre~hnU3O~nkoboMngu5esDqd45Y8nZYxfd9FvpXTFWAUwNkIMkYRdTOvZvXicRIfgRMzilfFSgmZDlgI3b~jKvk~koN-Y9AGEdtqW3ES8usS1YI1i8RxI51bA7mCDAVqqYKNLr0LYJbrZy8bNdEvV2UAxt7Yv7PObQFTbPjQpl4dhBO9fYWq09pfxmhA8eFooLeqykeIcVQBIhPpFCFn9lSBSNPAwtIY~2wOBe7OQmH2r4FKZVotfgcT1WsnEo6m1hRVg6EL4O7HjqKHbGLCnrMmBE43h75MppnVgatQ3GerbwL5VwxRKNNtZg__"
                 alt=""
-                className="img-infomartion-block"
+                className="img-information-block"
               />
               <div className="text-information--block">
                 <span>
@@ -148,14 +148,14 @@ export const Home = () => {
               <img
                 src="https://s3-alpha-sig.figma.com/img/090d/40f6/1856e64f8122cd1a2eb34abf6cd0458e?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ayrUdJQzWDB8KTq8UJYBeeh1oKo1pSqD7m-ecGgbewsI8CAOWuN-VncHpxjDj7sD6vki5ao-jL~DGOmx3W~COyVn5sP94~jNdr8aqOjqjFFx7XmDqWS0YK2gWSk0arNaTObXfkVNQXvYdtO1zQScGpJrkdmGoQUG6bJ8qmNejy1fSPQFuA0YaCYL5809FyWvpA36juv4VwHCroRg7XyEkJP~NSL68hbbbRxJAQk98kTNZNzP4ISYrVNC27HvjG65R3zZotgYje42UDA3INc2c7oInZVnxanAiOCAFC7Pfj2P7vtKvSLe~PLnh~oCSCeYIx8hYny8ZFaRB~9dAtsmfw__"
                 alt=""
-                className="img-infomartion-block"
+                className="img-information-block"
               />
             </div>
             <div className="information-block-3">
               <img
                 src="https://s3-alpha-sig.figma.com/img/3da6/cf3a/7f053d6fad4abb099137eba230b95310?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iVKebRlPIIJpRJ5RFtSg3JGuRMz2nNalfyx7U3JMjcjFPD3-N1ODm3x3SUgkAmhyIH5dM1IqbvKnB2fBu8--8kjSCIqe~2X2S7hARJxG5pfLNZinVztTOVlo1SLt6G-~7ZgyEZsmwKGxQ0SVY2tm7CfU3mgXKyAMs2aOhrgRaPjzCrP046lqrEtENf59lFSuzyFwZNHW4TFC3PjgIp~RtEzbPfNRbMHFdCC4hcLQnDuZNNGHJRz7YQr9GPdPsdCaBPyUJrY42z~kIQZ6hJ1yaq7mJkdf4xBPxMXE6rcAxmlVa2IcRRcCoMPh4TuzGxdeF6bFHN6DKBSsNuh6--bY1g__"
                 alt=""
-                className="img-infomartion-block"
+                className="img-information-block"
               />
               <div className="text-information--block">
                 <span>
