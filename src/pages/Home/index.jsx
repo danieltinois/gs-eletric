@@ -12,11 +12,15 @@ import { LuAlertCircle } from "react-icons/lu";
 import { CiCloudOn } from "react-icons/ci";
 import { IoShieldCheckmarkOutline } from "react-icons/io5";
 import { Footer } from "../../components/footer";
+import { ContactUs } from "../../components/btnContactUs";
 
 export const Home = () => {
   return (
     <div className="container">
       <NavBar />
+
+      <ContactUs />
+
       <div className="container-tracks">
         <MajorBelt />
         <div className="minor-band">
