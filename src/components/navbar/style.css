@@ -1,0 +1,93 @@
+.navbar-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+  z-index: 1000;
+}
+
+.navbar-wrapper.scrolled {
+  background-color: #000312;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 110px;
+  /* margin-bottom: 40px; */
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo a {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 26px;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #e89e49; /* Cor de destaque no hover */
+}
+
+button {
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+.scroll-up {
+  position: fixed; /* Corrige o posicionamento na tela */
+  right: 3rem;
+  bottom: -50%; /* Inicialmente escondido */
+  z-index: 10;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  background-color: rgb(29, 29, 31);
+  backdrop-filter: saturate(180%) blur(20px);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: bottom 0.3s, transform 0.3s;
+}
+
+.scroll-up:hover {
+  transform: translateY(-0.25rem);
+}
+
+/* Mostra o botão */
+._show-scroll {
+  bottom: 3rem; /* Fica visível */
+}
+
+@media (max-width: 1199.98px) {
+  .scroll-up {
+    right: 1rem;
+  }
+}

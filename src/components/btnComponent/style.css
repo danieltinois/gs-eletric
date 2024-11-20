@@ -1,0 +1,59 @@
+.custom-button {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  width: auto; /* Ajusta automaticamente com base nos SVGs */
+  height: 45px;
+  outline: none;
+}
+
+.custom-button .button-svg {
+  flex-shrink: 0;
+  width: 199px;
+  height: 45px;
+}
+
+.custom-button .button-text {
+  position: relative;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+  height: 100%;
+  margin-left: -150px; /* Ajusta para centralizar o texto sobre o botão */
+}
+
+.custom-button .button-arrow {
+  flex-shrink: 0;
+  width: 76px;
+  height: 45px;
+  margin-left: 40px; /* Evita espaçamento indesejado entre os SVGs */
+  transition: transform 0.2s ease;
+}
+
+.custom-button .arrow-icon {
+  font-size: 25px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.custom-button:hover .button-arrow {
+  transform: translateX(5px); /* Anima a seta ao passar o mouse */
+}
+
+.custom-button:hover .button-text {
+  color: white; /* Cor do texto no hover */
+}
