@@ -16,13 +16,13 @@ import { Footer } from "../../components/footer";
 export const Home = () => {
   return (
     <div className="container">
+      <NavBar />
       <div className="container-tracks">
         <MajorBelt />
         <div className="minor-band">
           <MinorBand />
         </div>
       </div>
-      <NavBar />
 
       <section className="hero">
         <div className="hero-content">
@@ -41,22 +41,20 @@ export const Home = () => {
           </div>
 
           <div className="info-2">
-            <div className="teste-info-2">
-              </div>
             <h1>Gs-Electric Inovações</h1>
             <p>
               Simplifique seus trajetos com bicicletas e ônibus elétricos, ganhe
               pontos e contribua para um futuro mais verde.
             </p>
           </div>
+        </div>
 
-          <div className="more-info">
-            <div className="btns-more-info">
-              <BtnComponent text="Saiba Mais" />
-            </div>
-            <div className="img-bus-and-bike">
-              <ImgBusAndBike />
-            </div>
+        <div className="more-info">
+          <div className="btns-more-info">
+            <BtnComponent text="Saiba Mais" />
+          </div>
+          <div className="img-bus-and-bike">
+            <ImgBusAndBike />
           </div>
         </div>
       </section>
