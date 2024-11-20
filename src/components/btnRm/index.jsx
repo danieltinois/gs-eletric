@@ -1,9 +1,22 @@
+import { useState } from "react";
 import "./style.css";
 
 export const ButtonRM = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const participants = [
+    { name: "Daniel de Assis Lobo Tinois", rm: "1234" },
+    { name: "Daniel de Assis Lobo Tinois", rm: "1234" },
+    { name: "Daniel de Assis Lobo Tinois", rm: "1234" },
+  ];
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+
   return (
     <div>
-      <button className="download-button">
+      <button className="download-button" onClick={toggleModal}>
         <div className="docs">
           <svg
             viewBox="0 0 24 24"
@@ -22,7 +35,7 @@ export const ButtonRM = () => {
             <line x1={16} y1={17} x2={8} y2={17} />
             <polyline points="10 9 9 9 8 9" />
           </svg>
-          RMS
+          RM's
         </div>
         <div className="download">
           <svg
@@ -42,6 +55,28 @@ export const ButtonRM = () => {
           </svg>
         </div>
       </button>
+      {/* Modal */}
+      {isModalOpen && (
+        <div className="modal-overlay">
+          <div className="modal-container">
+            <div className="modal-content">
+              <h2>Participantes do Grupo</h2>
+              <ul>
+                {participants.map((participant, index) => (
+                  <li key={index}>
+                    <strong>{participant.name}</strong>: RM {participant.rm}
+                  </li>
+                ))}
+              </ul>
+              <div className="close-btn-div">
+                <button className="close-btn" onClick={toggleModal}>
+                  Fechar
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };
