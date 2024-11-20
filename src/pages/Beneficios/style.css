@@ -75,7 +75,7 @@
   .benefit-card {
     background: white;
     border-radius: 10px;
-    padding: 25px; /* Maior espaçamento interno */
+    padding: 25px; 
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
     text-align: center;
     transition: transform 0.3s ease;
@@ -86,21 +86,21 @@
   }
   
   .icon-wrapper {
-    font-size: 4rem; /* Ícones maiores */
+    font-size: 4rem; 
     margin-bottom: 20px;
   }
   
   .benefit-title {
-    font-size: 1.8rem; /* Fonte maior */
+    font-size: 1.8rem; 
     margin-bottom: 15px;
     color: #4caf50;
-    font-weight: bold; /* Negrito */
+    font-weight: bold; 
   }
   
   .benefit-description {
-    font-size: 1.2rem; /* Fonte maior */
+    font-size: 1.2rem; 
     color: #666;
-    font-weight: bold; /* Negrito */
+    font-weight: bold; 
   }
   
   /* Sustentabilidade */
@@ -113,7 +113,7 @@
     display: flex;
     justify-content: center;
     gap: 40px;
-    flex-wrap: wrap; /* Garantir responsividade */
+    flex-wrap: wrap; 
     margin-top: 40px;
   }
   
@@ -122,22 +122,22 @@
     padding: 20px 30px;
     background: white;
     border-radius: 10px;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Sombra mais intensa */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
     flex: 1;
-    min-width: 200px; /* Garantir largura mínima */
+    min-width: 200px; 
   }
   
   .stat h3 {
-    font-size: 2.4rem; /* Fonte maior */
+    font-size: 2.4rem;
     color: #4caf50;
     margin-bottom: 10px;
-    font-weight: bold; /* Negrito */
+    font-weight: bold; 
   }
   
   .stat p {
-    font-size: 1.4rem; /* Fonte maior */
+    font-size: 1.4rem;
     color: #333;
-    font-weight: bold; /* Negrito */
+    font-weight: bold; 
   }
   
   /* Chamada para Ação */
@@ -151,20 +151,20 @@
   }
   
   .cta-section h2 {
-    font-size: 2.6rem; /* Fonte maior */
-    font-weight: bold; /* Negrito */
+    font-size: 2.6rem; 
+    font-weight: bold; 
     margin-bottom: 20px;
   }
   
   .cta-section p {
-    font-size: 1.4rem; /* Fonte maior */
-    font-weight: bold; /* Negrito */
+    font-size: 1.4rem; 
+    font-weight: bold; 
     margin-bottom: 30px;
   }
   
   .cta-button {
-    font-size: 1.6rem; /* Fonte maior */
-    font-weight: bold; /* Negrito */
+    font-size: 1.6rem; 
+    font-weight: bold; 
     background-color: white;
     color: #4caf50;
     padding: 15px 30px;
