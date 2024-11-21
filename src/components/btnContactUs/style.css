@@ -1,4 +1,13 @@
 /* From Uiverse.io by mrhyddenn */
+
+.teste-button-contact-us {
+  position: fixed;
+  top: 90%;
+  left: 30px;
+
+  z-index: 100;
+}
+
 .shadow__btn {
   padding: 10px 20px;
   border: none;
@@ -101,7 +110,7 @@
 }
 
 /* Close Button */
-.close-btn {
+.close-btn-modal-contact-us {
   background-color: transparent;
   border: none;
   color: #ffff;
@@ -116,7 +125,7 @@
   transition: color 0.3s ease;
 }
 
-.close-btn:hover {
+.close-btn-modal-contact-us:hover {
   color: #e53e3e;
 }
 

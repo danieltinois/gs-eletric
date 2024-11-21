@@ -1,0 +1,138 @@
+/* Estilos Gerais */
+.saiba-mais {
+  font-family: "Arial", sans-serif;
+  color: #fff;
+  background-color: #0a0a0a;
+}
+
+.container-saiba-mais {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Header Section */
+.header-saiba-mais {
+  background: linear-gradient(135deg, #0a8e63, #0a3c8e);
+  text-align: center;
+  padding: 5rem 1rem;
+  color: #fff;
+  padding-top: 150px;
+}
+
+.header-saiba-mais h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.header-saiba-mais p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+/* Sobre Nós Section */
+.sobre-nos {
+  background: #1c1c1e;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.sobre-nos h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.sobre-nos h2:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #0a8e63;
+  margin: 0.5rem auto;
+}
+
+.sobre-nos p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Diferenciais Section */
+.diferenciais {
+  background: #121212;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.diferenciais h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.diferenciais .grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card-diferencial {
+  background: #1c1c1e;
+  padding: 2rem;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-diferencial:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-diferencial h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-diferencial p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.icon {
+  font-size: 3rem;
+  color: #0a8e63;
+  margin-bottom: 1rem;
+}
+
+/* Missão Section */
+.missao-saiba-mais {
+  background: #0a8e63;
+  color: #fff;
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.missao-saiba-mais h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.missao-saiba-mais p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+
+.icon {
+  font-size: 3rem;
+  color: #0a8e63;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.card-diferencial:hover .icon {
+  color: #0af587;
+}

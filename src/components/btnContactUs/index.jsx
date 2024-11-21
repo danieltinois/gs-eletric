@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./style.css";
 
 export const ContactUs = () => {
@@ -7,7 +7,7 @@ export const ContactUs = () => {
   const toggleModal = () => setIsModalOpen(!isModalOpen);
 
   return (
-    <div>
+    <div className="teste-button-contact-us">
       <button className="shadow__btn" onClick={toggleModal}>
         Fale Conosco!
       </button>
@@ -42,7 +42,10 @@ export const ContactUs = () => {
                   Enviar Mensagem
                 </button>
               </form>
-              <button className="close-btn" onClick={toggleModal}>
+              <button
+                className="close-btn-modal-contact-us"
+                onClick={toggleModal}
+              >
                 Fechar
               </button>
             </div>

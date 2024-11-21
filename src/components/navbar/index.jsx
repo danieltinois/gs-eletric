@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { LogoGsEletric } from "../logo/logoGsEletric";
 
 import "./style.css";
+import { Link } from "react-router-dom";
 
 export const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -40,13 +41,13 @@ export const NavBar = () => {
 
           <ul className="nav-links">
             <li>
-              <a href="#about">Saiba Mais</a>
+              <Link to="/saiba-mais">Saiba Mais</Link>
             </li>
             <li>
-              <a href="#benefits">Beneficios</a>
+              <Link to="/beneficios">Beneficios</Link>
             </li>
             <li>
-              <a href="#historic">Historico</a>
+              <Link to="/historico">Historico</Link>
             </li>
             <li>
               <a href="#rewards">Recompensas</a>

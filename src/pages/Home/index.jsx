@@ -5,7 +5,7 @@ import { NavBar } from "../../components/navbar";
 import { MajorBelt } from "../../components/tracks/majorBelt";
 import { MinorBand } from "../../components/tracks/minorBand";
 
-import "./styles.css";
+import "./home-style.css";
 import { AiOutlineLike } from "react-icons/ai";
 import { FaRecycle, FaRegHeart } from "react-icons/fa";
 import { LuAlertCircle } from "react-icons/lu";
@@ -19,7 +19,7 @@ export const Home = () => {
   return (
     <div className="container">
       <NavBar />
-      <div className="teste-button-contact-us">
+      <div className="">
         <ContactUs />
       </div>
 
@@ -220,45 +220,47 @@ export const Home = () => {
           </div>
         </div>
 
-        <div className="our-vision-content">
-          <div className="our-vision-title-and-image">
-            <h1>Nossa Visão</h1>
-            <img
-              src="https://s3-alpha-sig.figma.com/img/ac93/886a/e27120c63df8a4cf53e24fd675337a29?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iWQgvzqCA8sznMYg-CBt5iBU8BXvlUFN4PjZIEoivFwA8gcaQkNXQq8Z9LCUjMQjKyL54KQfk2snxD~fgkEOF1U-d~zAxAXA0Lq8NmmXoD0y3cXOxGeD3xkrbpP-sUv1HGyNyNMXTcj4ydQ0UxDmD6n9BD7pt680iQHaV~yzvLVkHExgUH3bL9ur3I9~Of~Y85m9bnuL5E716GGfbp8TCTFmMhA-QpeJElGi6HMnIR9RlW1yaPw-3eiJOT8qL2mGFDGd8b3iLTNARAsx5PLmMz5MXbA-7-XrpVc3g5uormI1DJja~xgPBhgB5biJC-5Ys4PBL9Yc45KwrgHRFQY96g__"
-              alt=""
-            />
-          </div>
+        <div className="teste-our-vision-content">
+          <div className="our-vision-content">
+            <div className="our-vision-title-and-image">
+              <h1>Nossa Visão</h1>
+              <img
+                src="https://s3-alpha-sig.figma.com/img/ac93/886a/e27120c63df8a4cf53e24fd675337a29?Expires=1733097600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iWQgvzqCA8sznMYg-CBt5iBU8BXvlUFN4PjZIEoivFwA8gcaQkNXQq8Z9LCUjMQjKyL54KQfk2snxD~fgkEOF1U-d~zAxAXA0Lq8NmmXoD0y3cXOxGeD3xkrbpP-sUv1HGyNyNMXTcj4ydQ0UxDmD6n9BD7pt680iQHaV~yzvLVkHExgUH3bL9ur3I9~Of~Y85m9bnuL5E716GGfbp8TCTFmMhA-QpeJElGi6HMnIR9RlW1yaPw-3eiJOT8qL2mGFDGd8b3iLTNARAsx5PLmMz5MXbA-7-XrpVc3g5uormI1DJja~xgPBhgB5biJC-5Ys4PBL9Yc45KwrgHRFQY96g__"
+                alt=""
+              />
+            </div>
 
-          <div className="our-vision-items-box">
-            <div className="our-vision-items">
-              <div className="vision-item">
-                <div className="svg-vision-box">
-                  <LuAlertCircle />
+            <div className="our-vision-items-box">
+              <div className="our-vision-items">
+                <div className="vision-item">
+                  <div className="svg-vision-box">
+                    <LuAlertCircle />
+                  </div>
+                  <span>
+                    • Ser a plataforma líder em mobilidade sustentável,
+                    integrando soluções de transporte elétrico e recompensas que
+                    incentivam escolhas ecológicas.
+                  </span>
                 </div>
-                <span>
-                  • Ser a plataforma líder em mobilidade sustentável, integrando
-                  soluções de transporte elétrico e recompensas que incentivam
-                  escolhas ecológicas.
-                </span>
-              </div>
-              <div className="vision-item">
-                <div className="svg-vision-box">
-                  <CiCloudOn />
+                <div className="vision-item">
+                  <div className="svg-vision-box">
+                    <CiCloudOn />
+                  </div>
+                  <span>
+                    • Criar uma rede de transporte eficiente, acessível e
+                    alinhada com as metas globais de sustentabilidade.
+                  </span>
                 </div>
-                <span>
-                  • Criar uma rede de transporte eficiente, acessível e alinhada
-                  com as metas globais de sustentabilidade.
-                </span>
-              </div>
-              <div className="vision-item last-item">
-                <div className="svg-vision-box">
-                  <IoShieldCheckmarkOutline />
+                <div className="vision-item last-item">
+                  <div className="svg-vision-box">
+                    <IoShieldCheckmarkOutline />
+                  </div>
+                  <span>
+                    • Promover um estilo de vida ativo e saudável, incentivando
+                    o uso de bicicletas e transporte público para reduzir o
+                    tráfego e a poluição.
+                  </span>
                 </div>
-                <span>
-                  • Promover um estilo de vida ativo e saudável, incentivando o
-                  uso de bicicletas e transporte público para reduzir o tráfego
-                  e a poluição.
-                </span>
               </div>
             </div>
           </div>
