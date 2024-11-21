@@ -50,7 +50,7 @@ export const NavBar = () => {
               <Link to="/historico">Historico</Link>
             </li>
             <li>
-              <a href="#rewards">Recompensas</a>
+              <Link to="/recompensas">Recompensas</Link>
             </li>
           </ul>
         </nav>

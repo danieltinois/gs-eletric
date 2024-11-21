@@ -1,0 +1,251 @@
+/* Estrutura principal */
+.rewards-content-box {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Garante que a altura ocupe toda a tela */
+  overflow: hidden;
+  position: relative; /* Garante que o conteúdo fique acima do fundo */
+}
+
+/* Container de status do jogo */
+.game-status-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  overflow: hidden;
+}
+
+/* Animação de fundo (faixa) */
+.background-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(255, 255, 255, 0.1) 50%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  z-index: -2; /* Coloca a faixa de fundo atrás de tudo */
+}
+
+/* Conteúdo centralizado */
+.centered-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  max-width: 600px;
+  width: 100%;
+}
+
+.status-box {
+  background: rgb(0, 0, 0);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Perfil do Usuário */
+.user-profile-container {
+  margin-bottom: 30px;
+}
+
+.profile-pic img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 20px 0px;
+}
+
+.user-details h3,
+.user-details p {
+  margin: 10px 0;
+}
+
+/* Conquistas */
+.achievements {
+  margin-bottom: 30px;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #1f8f1f;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin: 5px;
+  font-size: 18px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Barra de Progresso */
+.points-progress {
+  margin-bottom: 30px;
+}
+
+.progress-bar {
+  background-color: #444;
+  border-radius: 10px;
+  height: 20px;
+  width: 100%;
+  margin: 10px 0;
+}
+
+.progress {
+  height: 100%;
+  background-color: #ff9900;
+  border-radius: 10px;
+}
+
+/* Botão de Resgatar Pontos */
+.btn-points-claim {
+  background-color: #ff6600;
+  color: white;
+  font-size: 20px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-points-claim:hover {
+  background-color: #ff4500;
+}
+
+/* Animação das estrelas de fundo */
+.box-off-background-start {
+  overflow-x: hidden;
+  position: absolute; /* Fixa o fundo para que não se mova */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Coloca as estrelas atrás do conteúdo */
+}
+
+@keyframes snow {
+  0% {
+    opacity: 0;
+    transform: translateY(0px);
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(650px);
+  }
+}
+
+.box-of-star1,
+.box-of-star2,
+.box-of-star3,
+.box-of-star4 {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1; /* Garante que as estrelas fiquem no fundo */
+  transform: translateY(0px);
+}
+
+.box-of-star1 {
+  animation: snow 5s linear infinite;
+}
+
+.box-of-star2 {
+  animation: snow 5s -1.64s linear infinite;
+}
+
+.box-of-star3 {
+  animation: snow 5s -2.3s linear infinite;
+}
+
+.box-of-star4 {
+  animation: snow 5s -3.3s linear infinite;
+}
+
+/* Estrelas em posições aleatórias */
+.star {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  opacity: 0.7;
+}
+
+.star:before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 80px;
+  left: 70px;
+  opacity: 0.7;
+}
+
+.star:after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 8px;
+  left: 170px;
+  opacity: 0.9;
+}
+
+/* Posições das estrelas */
+.star-position1 {
+  top: 30px;
+  left: 20px;
+}
+
+.star-position2 {
+  top: 110px;
+  left: 250px;
+}
+
+.star-position3 {
+  top: 60px;
+  left: 570px;
+}
+
+.star-position4 {
+  top: 120px;
+  left: 900px;
+}
+
+.star-position5 {
+  top: 20px;
+  left: 1120px;
+}
+
+.star-position6 {
+  top: 90px;
+  left: 1280px;
+}
+
+.star-position7 {
+  top: 30px;
+  left: 1480px;
+}

@@ -4,6 +4,7 @@ import Beneficios from "../pages/Beneficios";
 import { Historic } from "../pages/Historic";
 import { LearnMore } from "../pages/LearnMore";
 import { ScrollToTop } from "../components/scrollToTop/scrollToTop";
+import RewardsPage from "../pages/Rewards";
 
 const AppRoutes = () => {
   return (
@@ -14,7 +15,7 @@ const AppRoutes = () => {
         <Route path="/beneficios" element={<Beneficios />} />
         <Route path="/historico" element={<Historic />} />
         <Route path="/saiba-mais" element={<LearnMore />} />
-        {/* <Route path="/recompensas" element={<Recompensas />} /> */}
+        <Route path="/recompensas" element={<RewardsPage />} />
       </Routes>
     </Router>
   );
