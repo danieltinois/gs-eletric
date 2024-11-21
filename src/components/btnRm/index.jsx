@@ -5,11 +5,10 @@ export const ButtonRM = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const participants = [
-    { name: "Andre Brandassi Guedes", rm: "1234" },
-    { name: "Erick Daniel de Sousa Bezerra", rm: "1234" },
+    { name: "Andre Brandassi Guedes", rm: "555841" },
     { name: "Daniel de Assis Lobo Tinois", rm: "555798" },
-    { name: "Nicolas de Lima Silvestrini", rm: "1234" },
-    { name: "Pedro Gustavo Juchimiuk de Oliveira", rm: "1234" },
+    { name: "Nicolas de Lima Silvestrini", rm: "557135" },
+    { name: "Pedro Gustavo Juchimiuk de Oliveira", rm: "554415" },
   ];
 
   const toggleModal = () => {
