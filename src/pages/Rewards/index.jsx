@@ -24,62 +24,44 @@ const RewardsPage = () => {
     alert("Pontos resgatados com sucesso!");
   };
 
+  // Gera as estrelas dinamicamente no JSX
+  const generateStars = () => {
+    const stars = [];
+    for (let i = 0; i < 100; i++) {
+      const top = Math.random() * 100;
+      const left = Math.random() * 100;
+      const delay = Math.random() * 5;
+      stars.push(
+        <div
+          key={i}
+          className="star"
+          style={{
+            top: `${top}%`,
+            left: `${left}%`,
+            animationDelay: `${delay}s`,
+          }}
+        ></div>
+      );
+    }
+    return stars;
+  };
+
   return (
     <>
-      <div className="box-off-background-start">
-        <div className="box-of-star1">
-          <div className="star star-position1"></div>
-          <div className="star star-position2"></div>
-          <div className="star star-position3"></div>
-          <div className="star star-position4"></div>
-          <div className="star star-position5"></div>
-          <div className="star star-position6"></div>
-          <div className="star star-position7"></div>
-        </div>
-        <div className="box-of-star2">
-          <div className="star star-position1"></div>
-          <div className="star star-position2"></div>
-          <div className="star star-position3"></div>
-          <div className="star star-position4"></div>
-          <div className="star star-position5"></div>
-          <div className="star star-position6"></div>
-          <div className="star star-position7"></div>
-        </div>
-        <div className="box-of-star3">
-          <div className="star star-position1"></div>
-          <div className="star star-position2"></div>
-          <div className="star star-position3"></div>
-          <div className="star star-position4"></div>
-          <div className="star star-position5"></div>
-          <div className="star star-position6"></div>
-          <div className="star star-position7"></div>
-        </div>
-        <div className="box-of-star4">
-          <div className="star star-position1"></div>
-          <div className="star star-position2"></div>
-          <div className="star star-position3"></div>
-          <div className="star star-position4"></div>
-          <div className="star star-position5"></div>
-          <div className="star star-position6"></div>
-          <div className="star star-position7"></div>
-        </div>
-      </div>
+      <div className="starry-background">{generateStars()}</div>
 
       <NavBar />
       <ContactUs />
 
       <div className="rewards-content-box">
         <div className="game-status-container">
-          {/* Fundo com animação de faixa */}
           <motion.div
             className="background-animation"
             animate={{ x: ["100%", "0%"] }}
             transition={{ repeat: Infinity, duration: 10, ease: "linear" }}
           />
-
           <div className="centered-content">
             <div className="status-box">
-              {/* Perfil do Usuário */}
               <motion.div
                 className="user-profile-container"
                 initial={{ opacity: 0 }}
@@ -102,7 +84,6 @@ const RewardsPage = () => {
                 </div>
               </motion.div>
 
-              {/* Conquistas */}
               <motion.div
                 className="achievements"
                 initial={{ y: -50 }}
@@ -124,7 +105,6 @@ const RewardsPage = () => {
                 </div>
               </motion.div>
 
-              {/* Progresso de Pontos */}
               <motion.div
                 className="points-progress"
                 initial={{ opacity: 0 }}
@@ -143,7 +123,6 @@ const RewardsPage = () => {
                 </p>
               </motion.div>
 
-              {/* Botão para resgatar pontos */}
               <motion.button
                 className="btn-points-claim"
                 onClick={handleRedeemPoints}

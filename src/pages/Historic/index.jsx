@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { NavBar } from "../../components/navbar";
 import { ContactUs } from "../../components/btnContactUs";
 import { useEffect } from "react";
+import { Footer } from "../../components/footer";
 
 export const Historic = () => {
   useEffect(() => {
@@ -122,6 +123,8 @@ export const Historic = () => {
           ))}
         </div>
       </div>
+
+      <Footer />
     </>
   );
 };
