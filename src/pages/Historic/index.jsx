@@ -2,8 +2,13 @@ import "./style.css";
 import { motion } from "framer-motion";
 import { NavBar } from "../../components/navbar";
 import { ContactUs } from "../../components/btnContactUs";
+import { useEffect } from "react";
 
 export const Historic = () => {
+  useEffect(() => {
+    document.title = "Gs-Eletric | Historico";
+  }, []);
+
   const historico = [
     {
       id: 1,

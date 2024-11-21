@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { FaLeaf, FaVolumeMute, FaBolt, FaGlobeAmericas } from "react-icons/fa";
 import "./style.css";
@@ -8,6 +8,10 @@ import { ContactUs } from "../../components/btnContactUs";
 import { Link } from "react-router-dom";
 
 export default function Beneficios() {
+  useEffect(() => {
+    document.title = "Gs-Eletric | Beneficios";
+  }, []);
+
   return (
     <>
       <NavBar />

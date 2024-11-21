@@ -4,8 +4,13 @@ import { NavBar } from "../../components/navbar";
 import { FaLeaf, FaRegLightbulb, FaGlobeAmericas } from "react-icons/fa";
 import { motion } from "framer-motion";
 import "./learn-more-style.css";
+import { useEffect } from "react";
 
 export const LearnMore = () => {
+  useEffect(() => {
+    document.title = "Gs-Eletric | Saiba Mais";
+  }, []);
+
   return (
     <div className="saiba-mais">
       <NavBar />

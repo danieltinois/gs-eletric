@@ -2,8 +2,13 @@ import { motion } from "framer-motion";
 import "./style.css"; // Estilos para a página
 import { NavBar } from "../../components/navbar";
 import { ContactUs } from "../../components/btnContactUs";
+import { useEffect } from "react";
 
 const RewardsPage = () => {
+  useEffect(() => {
+    document.title = "Gs-Eletric | Recompensas";
+  }, []);
+
   const usuario = {
     nome: "João da Silva",
     email: "joao@email.com",
