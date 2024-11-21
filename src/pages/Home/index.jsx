@@ -39,7 +39,7 @@ export const Home = () => {
               className="iframe-video-pit"
               width="460"
               height="255"
-              src="https://www.youtube.com/embed/W6XE2auq7RU"
+              src="https://www.youtube.com/embed/0XMGcrsQ1sI"
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
